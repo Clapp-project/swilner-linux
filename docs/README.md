@@ -1,5 +1,5 @@
 
-<h2>Alter Linux - Arch Linux-derived OS made in Japan aimed at anyone to use</h2>
+<h2>Swilner Linux</h2>
 
 
 <p align="center">
