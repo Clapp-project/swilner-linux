@@ -12,15 +12,15 @@ set -e -u
 
 # Default value
 # All values can be changed by arguments.
-password=alter
+password=arch 
 boot_splash=false
 kernel='zen'
 theme_name=alter-logo
 rebuild=false
 japanese=false
-username='alter'
-os_name="Alter Linux"
-install_dir="alter"
+username='arch'
+os_name="Swilner Linux"
+install_dir="swilner"
 usershell="/bin/bash"
 debug=true
 
