@@ -2,9 +2,9 @@
 Version=1.0
 Type=Application
 Name=Welcome to Alter Linux
-Exec=/usr/lib/firefox/firefox https://fascode.net/projects/linux/alter/welcome.php
+Exec=/usr/lib/firefox/firefox https://
 Terminal=false
-Comment=This page is useful for using AlterLinux.
+Comment=This page is useful for using SwilnerLinux.
 Icon=/usr/share/icons/hicolor/scalable/alter.svg
 URL=https://fascode.net/projects/linux/alter/welcome.php
 
