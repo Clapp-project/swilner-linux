@@ -147,7 +147,3 @@ AlterLinux の最新の開発状況は<a href="https://github.com/orgs/FascodeNe
 ブート時のアニメーションを無効化してブートし、ログを確認することができます。<br>
 ディスクから起動し、<code>Boot Alter Linux without boot splash (x86_64)</code>を選択して下さい。<br>
 また、発生した状況や機種名などを記載の上<a href="https://github.com/FascodeNet/alterlinux/issues">こちら</a>までご報告をお願いします。
-
-<h2>〈FascodeNetworkと開発者について〉</h2>
-<a href="https://fascode.net/">Fascode Network</a>は学生を主体とする創作チームです。<br>
-<a href="https://fascode.net/projects/linux/alter/">AlterLinux</a>と<a href="https://fascode.net/projects/linux/serene/">SereneLinux</a>の開発を行っています。
