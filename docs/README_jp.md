@@ -1,4 +1,3 @@
-
 <h2 align="center">Alter Linux - 誰でも使えることを目標にした日本製でArch Linux派生のOS</h2>
 
 <p align="center">
@@ -56,8 +55,8 @@
 
 <h2>〈概要〉</h2>
 
-Alter LinuxはArch Linuxをベースに開発されている新しいOSです。<br>
-AlterLinuxの最新の開発状況は<a href="https://github.com/orgs/FascodeNet/projects/2">プロジェクトボード</a>を確認してください。<br>
+Alter Linux は Arch Linux をベースに開発されている新しい OS です。<br>
+AlterLinux の最新の開発状況は<a href="https://github.com/orgs/FascodeNet/projects/2">プロジェクトボード</a>を確認してください。<br>
 ユーザ向けのアナウンスや不具合等の情報は<a href="https://fascode.net/projects/linux/alter/">公式サイト</a>をご覧ください。
 
 <h3>Xfce</h3>
@@ -65,7 +64,6 @@ AlterLinuxの最新の開発状況は<a href="https://github.com/orgs/FascodeNet
 
 <h3>Lxde</h3>
 <img src="../images/screenshot/desktop-lxde.png" alt="screenshot">
-
 
 <h2>〈特徴〉</h2>
 <ul>
@@ -85,7 +83,6 @@ AlterLinuxの最新の開発状況は<a href="https://github.com/orgs/FascodeNet
 <b>私達はリポジトリやイメージファイル配布用のミラーサーバ提供者を募集しております。</b>
 <br>
 もし私達にミラーを提供して頂ける場合は開発者のTwitterまでお願いします。
-
 
 <h2>〈ブランチ〉</h2>
 主要なブランチは以下のとおりです。これ以外のブランチは一時的なものや特定の用途で使われているものです。
@@ -125,14 +122,12 @@ AlterLinuxの最新の開発状況は<a href="https://github.com/orgs/FascodeNet
 	</tbody>
 </table>
 
-
 <h2>〈意見や感想について〉</h2>
 もしAlterLinuxが起動しない、使いにくい、標準でインストールしてほしいソフトウェアがある、など意見がございましたらどうぞ遠慮なく<a href="https://github.com/FascodeNet/alterlinux/issues">Issues</a>まで意見をお寄せください。<br>
 私達はAlterLinuxをより良いものにするために様々なユーザーの意見を募集しています。<br>
 
 <h2>〈バグ報告やプルリクエストを送る際は〉</h2>
 必ず<a href="CONTRIBUTING.md">CONTRIBUTING.md</a>を読んでください。
-
 
 <h2>〈ドキュメント〉</h2>
 一部のドキュメントは情報が古かったり、一部の言語しかない場合が有ります。<br>
@@ -148,41 +143,11 @@ AlterLinuxの最新の開発状況は<a href="https://github.com/orgs/FascodeNet
 	<li><a href="en/CONFIG.md">ビルドの設定ファイルについて</a></li>
 </ul>
 
-
 <h2>〈起動できない場合〉</h2>
 ブート時のアニメーションを無効化してブートし、ログを確認することができます。<br>
 ディスクから起動し、<code>Boot Alter Linux without boot splash (x86_64)</code>を選択して下さい。<br>
 また、発生した状況や機種名などを記載の上<a href="https://github.com/FascodeNet/alterlinux/issues">こちら</a>までご報告をお願いします。
 
-
 <h2>〈FascodeNetworkと開発者について〉</h2>
 <a href="https://fascode.net/">Fascode Network</a>は学生を主体とする創作チームです。<br>
 <a href="https://fascode.net/projects/linux/alter/">AlterLinux</a>と<a href="https://fascode.net/projects/linux/serene/">SereneLinux</a>の開発を行っています。
-
-<h3>公式Twitterアカウント</h3>
-<a href="https://twitter.com/FascodeNetwork">
-	<img src="https://pbs.twimg.com/profile_images/1245716817831530497/JEkKX1XN_400x400.jpg" width="100px">
-</a>
-<a href="https://twitter.com/Fascode_JP">
-	<img src="https://pbs.twimg.com/profile_images/1245682659231068160/Nn5tPUvB_400x400.jpg" width="100px">
-</a>
-
-<h3>開発者Twitterアカウント</h3>
-<a href="https://twitter.com/Hayao0819">
-	<img src="https://avatars1.githubusercontent.com/u/32128205" width="100px">
-</a>
-<a href="https://twitter.com/Pixel_3a">
-	<img src="https://avatars0.githubusercontent.com/u/48173871" width="100px">
-</a>
-<a href="https://twitter.com/YangDevJP">
-	<img src="https://avatars0.githubusercontent.com/u/47053316" width="100px">
-</a>
-<a href="https://twitter.com/yamad_linuxer">
-	<img src="https://avatars1.githubusercontent.com/u/45691925" width="100px">
-</a>
-<a href="https://twitter.com/tukutuN_27">
-	<img src="https://pbs.twimg.com/profile_images/1252216597164376064/_L3qgpkr_400x400.jpg" width="100px">
-</a>
-<a href="https://twitter.com/naoko1010hh">
-	<img src="https://avatars1.githubusercontent.com/u/50263013" width="100px">
-</a>
