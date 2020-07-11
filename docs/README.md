@@ -1,15 +1,17 @@
 
-<h2>Alter Linux - Arch Linux-derived OS made in Japan aimed at anyone to use</h2>
+<h2>Swilner Linux</h2>
+
+
+<!--<p align="center">
+	<img src="../images/logo/color-black-catchcopy/AlterV6-LogowithCopy-Colored-DarkText-256px.png" alt="AlterLinux logo">
+</p>-->
 
 <p align="center">
-	<img src="../images/logo/color-black-catchcopy/AlterV6-LogowithCopy-Colored-DarkText-256px.png" alt="AlterLinux logo">
-</p>
-<p align="center">
-	<a href="https://fascode.net/en/projects/linux/alter/">
+	<a href="https://">
 		<img src="https://img.shields.io/badge/Maintained%3F-Yes-green?style=for-the-badge">
 	</a>
 	<a href="../LICENSE">
-		<img src="https://img.shields.io/github/license/FascodeNet/alterlinux?style=for-the-badge" alt="License: GPLv3.0">
+		<img src="https://img.shields.io/github/license/approvers/swilner-linux?style=for-the-badge" alt="License: GPLv3.0">
 	</a>
 	<a href="https://www.archlinux.org/">
 		<img src="https://img.shields.io/badge/BASE-ArchLinux-blue?style=for-the-badge&logo=arch-linux" alt="Base">
@@ -20,28 +22,28 @@
 </p>
 <p align="center">
 	<a href="https://github.com/FascodeNet/alterlinux/issues">
-		<img src="https://img.shields.io/github/issues/FascodeNet/alterlinux?color=violet&style=for-the-badge&logo=github" alt="Issues">
+		<img src="https://img.shields.io/github/issues/approvers/swilner-linux?color=violet&style=for-the-badge&logo=github" alt="Issues">
 	</a>
 	<a href="https://github.com/FascodeNet/alterlinux/stargazers">
 		<img src="https://img.shields.io/github/stars/FascodeNet/alterlinux?color=yellow&style=for-the-badge&logo=github">
 	</a>
 	<a href="https://github.com/FascodeNet/alterlinux/network/members">
-		<img src="https://img.shields.io/github/forks/FascodeNet/alterlinux?style=for-the-badge">
+		<img src="https://img.shields.io/github/forks/approvers/swilner-linux?style=for-the-badge">
 	</a>
 </p>
 <p align="center">
 	<a href="https://github.com/FascodeNet/alterlinux/releases">
-		<img src="https://img.shields.io/github/v/release/FascodeNet/alterlinux?color=blue&include_prereleases&style=for-the-badge" alt="release">
+		<img src="https://img.shields.io/github/v/release/approvers/swilner-linux?color=blue&include_prereleases&style=for-the-badge" alt="release">
 	</a>
 	<a href="https://fascode.net/en/projects/linux/alter/downloads/">
-		<img src="https://img.shields.io/github/downloads/FascodeNet/alterlinux/total?style=for-the-badge">
+		<img src="https://img.shields.io/github/downloads/approvers/swilner-linux/total?style=for-the-badge">
 	</a>
 	<a href="">
-		<img src="https://img.shields.io/github/last-commit/FascodeNet/alterlinux?style=for-the-badge">
+		<img src="https://img.shields.io/github/last-commit/approvers/swilner-linux?style=for-the-badge">
 	</a>
 </p>
 
-<table>
+<!-- <table>
 	<thead>
 		<tr>
 			<th style="text-align:center">
@@ -56,7 +58,7 @@
 
 <b>
 	日本語版は<a href="README_jp.md">こちら</a>にあります
-</b>
+</b>-->
 
 <h2>〈Overview〉</h2>
 
@@ -156,35 +158,8 @@ You can disable the boot animation and boot to see the logs.<br>
 Boot from the disk and select <code>Boot Alter Linux without boot splash (x86_64)</code>.<br>
 In addition, please write down the situation and model name <a href="https://github.com/FascodeNet/alterlinux/issues">here</a>, and report it to the developer.
 
+<h2>Developer Twitter Account</h2>
 
-<h2>〈About FascodeNetwork and developers〉</h2>
-<a href="https://fascode.net/">Fascode Network</a> is a creative team mainly composed of students.<br>
-We are developing <a href="https://fascode.net/projects/linux/alter/">AlterLinux</a> and <a href="https://fascode.net/projects/linux/serene/">SereneLinux</a>.
-
-<h3>Official Twitter account</h3>
-<a href="https://twitter.com/FascodeNetwork">
-	<img src="https://pbs.twimg.com/profile_images/1245716817831530497/JEkKX1XN_400x400.jpg" width="100px">
-</a>
-<a href="https://twitter.com/Fascode_JP">
-	<img src="https://pbs.twimg.com/profile_images/1245682659231068160/Nn5tPUvB_400x400.jpg" width="100px">
-</a>
-
-<h3>Developer Twitter account</h3>
-<a href="https://twitter.com/Hayao0819">
-	<img src="https://avatars1.githubusercontent.com/u/32128205" width="100px">
-</a>
-<a href="https://twitter.com/Pixel_3a">
-	<img src="https://avatars0.githubusercontent.com/u/48173871" width="100px">
-</a>
-<a href="https://twitter.com/YangDevJP">
-	<img src="https://avatars0.githubusercontent.com/u/47053316" width="100px">
-</a>
-<a href="https://twitter.com/yamad_linuxer">
-	<img src="https://avatars1.githubusercontent.com/u/45691925" width="100px">
-</a>
-<a href="https://twitter.com/tukutuN_27">
-	<img src="https://pbs.twimg.com/profile_images/1252216597164376064/_L3qgpkr_400x400.jpg" width="100px">
-</a>
-<a href="https://twitter.com/naoko1010hh">
-	<img src="https://avatars1.githubusercontent.com/u/50263013" width="100px">
+<a href="https://twitter.com/laminne33569">
+<img src="https://github.com/laminne.png" width="100px">
 </a>
