@@ -43,7 +43,7 @@
 	</a>
 </p>
 
-<!-- <table>
+ <table>
 	<thead>
 		<tr>
 			<th style="text-align:center">
@@ -56,9 +56,9 @@
 	</thead>
 </table>
 
-<b>
+
 	日本語版は<a href="README_jp.md">こちら</a>にあります
-</b>-->
+
 
 <h2>〈Overview〉</h2>
 
