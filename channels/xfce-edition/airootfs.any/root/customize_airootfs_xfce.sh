@@ -65,9 +65,9 @@ function remove () {
 # Replace wallpaper.
 if [[ -f /usr/share/backgrounds/xfce/xfce-stripes.png ]]; then
     remove /usr/share/backgrounds/xfce/xfce-stripes.png
-    ln -s /usr/share/backgrounds/alter.png /usr/share/backgrounds/xfce/xfce-stripes.png
+    ln -s /usr/share/backgrounds/wallpaper.png /usr/share/backgrounds/xfce/xfce-stripes.png
 fi
-[[ -f /usr/share/backgrounds/alter.png ]] && chmod 644 /usr/share/backgrounds/alter.png
+[[ -f /usr/share/backgrounds/wallpaper.png ]] && chmod 644 /usr/share/backgrounds/wallpaper.png
 
 
 # Bluetooth
@@ -134,3 +134,19 @@ chmod 755 /usr/local/bin/alterlinux-sidebar
 
 # Replace auto login user
 sed -i s/%USERNAME%/${username}/g /etc/lightdm/lightdm.conf
+
+chsh -s /bin/zsh
+rm -f -r /usr/share/lightdm-webkit/themes/alter/images/4-3.png
+rm -f -r /usr/share/lightdm-webkit/themes/alter/images/5-4.png
+rm -f -r /usr/share/lightdm-webkit/themes/alter/images/16-9.png
+rm -f -r /usr/share/lightdm-webkit/themes/alter/images/16-10.png
+rm -f -r /usr/share/lightdm-webkit/themes/alter/images/Aqua_logo.png
+rm -f -r /usr/share/lightdm-webkit/themes/alter/images/index.html
+cp -f /usr/share/backgrounds/4-3.png /usr/share/lightdm-webkit/themes/alter/images/4-3.png
+cp -f /usr/share/backgrounds/5-4.png /usr/share/lightdm-webkit/themes/alter/images/5-4.png
+cp -f /usr/share/backgrounds/16-9.jpg /usr/share/lightdm-webkit/themes/alter/images/16-9.png
+cp -f /usr/share/backgrounds/16-10.jpg /usr/share/lightdm-webkit/themes/alter/images/16-10.png
+cp -f /usr/share/backgrounds/4-3.png /usr/share/lightdm-webkit/themes/alter/images/Aqua_logo.png
+cp -f /usr/share/backgrounds/index.html /usr/share/lightdm-webkit/themes/alter/index.html
+pacman -U /home/yytu/aqualinux/channels/aqua.add/packages.x86_64/pinta-git-r1821.faf54854-1-x86_64.pkg.tar.xz
+ln '/home/yytu/aqualinux/work/x86_64/airootfs/home/aqua/Desktop/calamares.desktop' '/home/yytu/aqualinux/work/x86_64/airootfs/home/aqua/デスクトップ'
