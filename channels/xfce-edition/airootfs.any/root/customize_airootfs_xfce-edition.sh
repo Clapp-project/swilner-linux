@@ -138,13 +138,11 @@ sed -i s/%USERNAME%/${username}/g /etc/lightdm/lightdm.conf
 chsh -s /bin/zsh
 rm -f -r /usr/share/lightdm-webkit/themes/alter/images/4-3.png
 rm -f -r /usr/share/lightdm-webkit/themes/alter/images/5-4.png
-rm -f -r /usr/share/lightdm-webkit/themes/alter/images/16-9.png
 rm -f -r /usr/share/lightdm-webkit/themes/alter/images/16-10.png
 rm -f -r /usr/share/lightdm-webkit/themes/alter/images/Aqua_logo.png
 rm -f -r /usr/share/lightdm-webkit/themes/alter/images/index.html
 cp -f /usr/share/backgrounds/4-3.png /usr/share/lightdm-webkit/themes/alter/images/4-3.png
 cp -f /usr/share/backgrounds/5-4.png /usr/share/lightdm-webkit/themes/alter/images/5-4.png
-cp -f /usr/share/backgrounds/16-9.jpg /usr/share/lightdm-webkit/themes/alter/images/16-9.png
 cp -f /usr/share/backgrounds/16-10.jpg /usr/share/lightdm-webkit/themes/alter/images/16-10.png
 cp -f /usr/share/backgrounds/4-3.png /usr/share/lightdm-webkit/themes/alter/images/Aqua_logo.png
 cp -f /usr/share/backgrounds/index.html /usr/share/lightdm-webkit/themes/alter/index.html
