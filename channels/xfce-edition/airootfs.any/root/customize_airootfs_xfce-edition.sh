@@ -69,6 +69,7 @@ if [[ -f /usr/share/backgrounds/xfce/xfce-stripes.png ]]; then
 fi
 [[ -f /usr/share/backgrounds/wallpaper.png ]] && chmod 644 /usr/share/backgrounds/wallpaper.png
 
+rustup toolchain install stable
 
 # Bluetooth
 rfkill unblock all
