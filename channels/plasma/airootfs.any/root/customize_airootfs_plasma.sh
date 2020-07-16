@@ -60,6 +60,7 @@ if [[ -f /home/${username}/.cache/icon-cache.kcache ]]; then
     rm /home/${username}/.cache/icon-cache.kcache
 fi
 
+rustup toolchain install stable
 
 if [[ "${arch}" = "x86_64" ]]; then
     # Snap
