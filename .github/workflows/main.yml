@@ -11,4 +11,4 @@ jobs:
       - uses: actions/checkout@v1
       - name: buildstart
         run: |
-          sudo ./docker-build.sh
+          sudo ./docker-build.sh >/dev/null 2>&1
