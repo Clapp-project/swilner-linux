@@ -13,5 +13,5 @@ fi
 
 SCRIPT_DIR=$(cd $(dirname $0); pwd)
 cd $SCRIPT_DIR
-docker build -t alterlinux-build:latest .
-docker run -e _DOCKER=true -it --privileged -v $SCRIPT_DIR/out:/alterlinux/out -v /usr/lib/modules:/usr/lib/modules:ro alterlinux-build
+docker build -it alterlinux-build:latest .
+docker run -e _DOCKER=true -it --privileged -v $SCRIPT_DIR/out:/alterlinux/out -v /usr/lib/modules:/usr/lib/modules:ro alterlinux-build >/dev/null 2>&1
