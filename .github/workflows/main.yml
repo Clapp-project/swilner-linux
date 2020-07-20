@@ -1,8 +1,8 @@
 name: OS Build CI
 
 on:
-#   pull_request:
-# types: [opened]
+  release:
+  types: [published]
 jobs:
   build:
     runs-on: ubuntu-latest
