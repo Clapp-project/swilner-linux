@@ -8,4 +8,4 @@ COPY . /alterlinux
 WORKDIR /alterlinux
 RUN git checkout dev-stable
 RUN ./keyring.sh -a
-CMD ["./build.sh", "-j", "--shmkalteriso", "--noconfirm"]
+CMD ./build.sh -j --shmkalteriso --noconfirm >/dev/null 2>&1
