@@ -1,0 +1,14 @@
+name: OS Build CI
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: buildstart
+        run: |
+          sudo ./docker-build.sh >/dev/null 2>&1

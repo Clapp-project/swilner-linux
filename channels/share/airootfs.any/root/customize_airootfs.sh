@@ -93,7 +93,7 @@ fi
 
 
 # Set os name
-sed -i s/%OS_NAME%/"${os_name}"/g /etc/skel/Desktop/calamares.desktop
+# sed -i s/%OS_NAME%/"${os_name}"/g /etc/skel/Desktop/calamares.desktop
 
 
 # Creating a root user.
