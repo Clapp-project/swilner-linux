@@ -63,10 +63,12 @@ _chroot_init() {
     _pacman "base syslinux"
 }
 
+# この部分でchrootを実行させて環境に入っている
 _chroot_run() {
     eval arch-chroot ${work_dir}/airootfs "${run_cmd}"
 }
 
+# airootfsをマウント（マウント地点は${work_dir}）
 _mount_airootfs() {
     trap "_umount_airootfs" EXIT HUP INT TERM
     mkdir -p "${work_dir}/mnt/airootfs"
@@ -167,6 +169,7 @@ _show_config () {
 }
 
 # Install desired packages to airootfs
+# confファイルからパッケージ一覧を読み込ませてairootfs環境内でpacstrap実行
 _pacman ()
 {
     _msg_info "Installing packages to '${work_dir}/airootfs/'..."
@@ -181,6 +184,7 @@ _pacman ()
 }
 
 # Cleanup airootfs
+# いらないファイルを消す
 _cleanup () {
     _msg_info "Cleaning up what we can on airootfs..."
 
@@ -218,6 +222,7 @@ _cleanup () {
 }
 
 # Makes a ext4 filesystem inside a SquashFS from a source directory.
+# SquashFS環境内でext4のパーティションを作成する
 _mkairootfs_img () {
     if [[ ! -e "${work_dir}/airootfs" ]]; then
         _msg_error "The path '${work_dir}/airootfs' does not exist" 1
@@ -250,6 +255,7 @@ _mkairootfs_img () {
 }
 
 # Makes a SquashFS filesystem from a source directory.
+# SquashFSファイルシステムを作成
 _mkairootfs_sfs () {
     if [[ ! -e "${work_dir}/airootfs" ]]; then
         _msg_error "The path '${work_dir}/airootfs' does not exist" 1
@@ -307,6 +313,7 @@ command_pkglist () {
 }
 
 # Create an ISO9660 filesystem from "iso" directory.
+# ISO生成用にISO9660のファイルシステム作成
 command_iso () {
     local _iso_efi_boot_args=""
 

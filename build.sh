@@ -660,6 +660,7 @@ show_settings() {
 
 
 # Setup custom pacman.conf with current cache directories.
+#キャッシュ関連
 make_pacman_conf() {
     _msg_debug "Use ${build_pacman_conf}"
     local _cache_dirs
@@ -668,6 +669,7 @@ make_pacman_conf() {
 }
 
 # Base installation, plus needed packages (airootfs)
+# pacman.confから値を読み込んでインストールpackage情報をmkalteriso.shに食わせる
 make_basefs() {
     ${mkalteriso} ${mkalteriso_option} -w "${work_dir}/${arch}" -C "${work_dir}/pacman-${arch}.conf" -D "${install_dir}" init
     # ${mkalteriso} ${mkalteriso_option} -w "${work_dir}/${arch}" -C "${work_dir}/pacman-${arch}.conf" -D "${install_dir}" -p "haveged intel-ucode amd-ucode memtest86+ mkinitcpio-nfs-utils nbd zsh efitools" install
@@ -818,6 +820,7 @@ make_packages() {
     done
 
     # Install packages on airootfs
+    # ここでairootfsにpackageをインストール
     ${mkalteriso} ${mkalteriso_option} -w "${work_dir}/${arch}" -C "${work_dir}/pacman-${arch}.conf" -D "${install_dir}" -p "${pkglist[@]}" install
 }
 
@@ -894,6 +897,7 @@ make_customize_airootfs() {
 
 
     # Generate options of customize_airootfs.sh.
+    # 各チャンネルの中にあるカスタムスクリプトのオプションを生成
     local addition_options
     local share_options
     addition_options=
@@ -988,6 +992,7 @@ make_customize_airootfs() {
 }
 
 # Copy mkinitcpio archiso hooks and build initramfs (airootfs)
+# フック(インストールさせるときに実行させるおまけみたいなやつ)をコピー
 make_setup_mkinitcpio() {
     local _hook
     mkdir -p "${work_dir}/${arch}/airootfs/etc/initcpio/hooks"
@@ -1022,6 +1027,7 @@ make_setup_mkinitcpio() {
 }
 
 # Prepare kernel/initramfs ${install_dir}/boot/
+# カーネルを ${install_dir}/boot/に移動させる
 make_boot() {
     mkdir -p "${work_dir}/iso/${install_dir}/boot/${arch}"
     cp "${work_dir}/${arch}/airootfs/boot/archiso.img" "${work_dir}/iso/${install_dir}/boot/${arch}/archiso.img"
@@ -1045,6 +1051,7 @@ make_boot_extra() {
 }
 
 # Prepare /${install_dir}/boot/syslinux
+# Linux起動用のファイル(Syslinux)を設定
 make_syslinux() {
     if [[ ! ${kernel} = "core" ]]; then
         _uname_r="$(file -b ${work_dir}/${arch}/airootfs/boot/vmlinuz-linux-${kernel} | awk 'f{print;f=0} /version/{f=1}' RS=' ')"
@@ -1327,6 +1334,7 @@ done
 
 
 # Check root.
+# root権限で実行されているかを確認する
 if [[ ${EUID} -ne 0 ]]; then
     _msg_warn "This script must be run as root." >&2
     # echo "Use -h to display script details." >&2
@@ -1366,6 +1374,7 @@ rebuildfile="${work_dir}/build_options"
 
 
 # Parse channels
+# チャンネル一覧を表示
 set +eu
 if [[ -n "${1}" ]]; then
     channel_name="${1}"
