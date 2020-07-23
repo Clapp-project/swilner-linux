@@ -399,20 +399,20 @@ remove_work() {
 # Preparation for build
 prepare_build() {
     # Build mkalteriso
-    if [[ "${shmkalteriso}" = false ]]; then
-        mkalteriso="${script_path}/system/mkalteriso"
-        cd "${script_path}"
-        _msg_info "Building mkalteriso..."
-        if [[ "${debug}" = true ]]; then
-            make mkalteriso
-            echo
-        else
-            make mkalteriso > /dev/null 2>&1
-        fi
-        cd - > /dev/null 2>&1
-    else
+    # if [[ "${shmkalteriso}" = false ]]; then
+    #     mkalteriso="${script_path}/system/mkalteriso"
+    #     cd "${script_path}"
+    #     _msg_info "Building mkalteriso..."
+    #     if [[ "${debug}" = true ]]; then
+    #         make mkalteriso
+    #         echo
+    #     else
+    #         make mkalteriso > /dev/null 2>&1
+    #     fi
+    #     cd - > /dev/null 2>&1
+    # else
         mkalteriso="${script_path}/system/mkalteriso.sh"
-    fi
+    # fi
 
     # Create a working directory.
     [[ ! -d "${work_dir}" ]] && mkdir -p "${work_dir}"
